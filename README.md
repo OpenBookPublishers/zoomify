@@ -1,9 +1,18 @@
 # Zoomify
 
-Absolutely minimal version of GSIV to work with touch screens and very slow processors.
+Zoomify page that works with any image.
+
+| Parameter | Description                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------- |
+| `src`     | The URL of the image to zoomify.                                                                  |
+| `caption` | Caption text to display underneath the image and metadata.                                        |
+| `return`  | When provided a URL is provided a button will be shown allowing the user to go back to that path. |
+
+The `index.php` script loads the required zoomify libraries, embeds JSON-LD metadata of the type https://schema.org/ImageObject, and creates thumbnails of the image to be used as favicon and social media tags.
+
 
 ---
-The `zoomify.js`, `zoomify.css` and the zoom-in/zoom-out images have been created by Craig Francis and are subject to the following license:
+The original `zoomify.js` and `zoomify.css` files, and the zoom-in/zoom-out images have been created by Craig Francis and are subject to the following license:
 
 Copyright (c) 2012, Craig Francis All rights reserved.
 
