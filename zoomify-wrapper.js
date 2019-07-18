@@ -4,9 +4,9 @@ $(document).ready(function () {
     $('figure > img').each(function(i, obj) {
         img_url = $(this).prop('src');
         img_id  = $(this).prop('id');
-        img_alt = escape($(this).prop('alt'));
+        img_alt = encodeURI($(this).prop('alt'));
         doc_url = window.location.href.split('#')[0];
-        return_url = escape(doc_url + '#' + img_id);
+        return_url = encodeURI(doc_url + '#' + img_id);
 
         $(this).wrap($('<a>',{
             href: zoomify_url + '?src=' + $(this).prop('src') + '&return=' + return_url + '&caption=' + img_alt
