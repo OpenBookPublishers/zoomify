@@ -20,6 +20,10 @@
     margin-top: 0.5em;
   }
 
+  .resource-url {
+    font-style: normal;
+  }
+
   #image-zoom-wrapper {
     position: relative;
     text-align: left;

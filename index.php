@@ -89,6 +89,12 @@
   <div id="image-zoom-wrapper">
       <img id="image-zoom" src="<?php echo $src; ?>" alt="<?php echo $caption; ?>" />
   </div>
-  <figcaption><?php echo $caption; ?></br></br>Image URL: <a href="<?php echo $src; ?>"><?php echo $src; ?></a></figcaption>
+  <figcaption>
+      <?php echo $caption; ?>
+      </br></br>
+      <span class="resource-url">
+          Image URL: <a href="<?php echo $src; ?>"><?php echo $src; ?></a>
+      </span>
+  </figcaption>
 </figure>
 </body>
